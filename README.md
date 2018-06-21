@@ -1,17 +1,6 @@
-<p align="center">
-<img align="center" src="api_giphy_header.gif" width="100%" alt="API Giphy logo"/>
-</p>
-
-# GIPHY API Documentation
-
-**6/20/17 Update:** The documentation that used to live here has moved! Check out the [new home for our docs](http://developers.giphy.com/docs) on our standalone developer portal, [GIPHY Developers](http://developers.giphy.com)!
-
-[GIPHY](http://www.giphy.com) is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine. The GIPHY API is a series of JSON read endpoints that allow you to integrate the features of GIPHY's search engine into your project or app. 
-
-To view detailed documentation and code samples and to be assigned API Keys for your apps, visit [GIPHY Developers](http://developers.giphy.com), our developer portal.
-
-# Reporting Issues
-
-To report issues with the API or its documentation, please use the [GitHub Issues](https://github.com/Giphy/GiphyAPI/issues) tab for this repo. We appreciate your feedback!
-
-# Learn more about [Engineering at Giphy](https://engineering.giphy.com) 
+ <h2>Food Recipinterest</h2>
+ <p>The application is developed in Advance Java in Netbeans IDE 8.1. The home page of the web application is an html page that shows menus, a video,a log-in form and sign-up button and a marquee gallery of content. It serves as a gateway to subscribe to more of the similar content. </p>
+ <br>
+ ![screenshot from 2018-06-21 23-03-53](https://user-images.githubusercontent.com/39344406/41736218-7e0fd7c8-75a9-11e8-8fc5-edf00816148f.png)
+ <br>
+ <p>The new user can explore the website menus and sign up for more which opens this window</p> 
