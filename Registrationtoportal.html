@@ -1,0 +1,200 @@
+ <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+          function f1()
+          {
+              var flag=true;
+              var name,email,password,cpassword,mobile;
+              var s1,s2,s3,s4,s5;
+               name= document.form.name.value;
+               mobile=document.form.mobile.value;
+             // name=document.getElementById('name').value;
+              email=document.getElementById('email').value; 
+              password=document.getElementById('password').value;
+              cpassword=document.getElementById('cpassword').value;
+             // mobile=document.getElementById('mobile').value;
+             // male=document.getElementById('male').checked;
+              //female=document.getElementById('female').checked;
+              
+               s1=document.getElementById('s1');
+               s2=document.getElementById('s2');
+               s3=document.getElementById('s3');
+               s4=document.getElementById('s4');
+               s5=document.getElementById('s5');
+               //s6=document.getElementById('s6');
+             
+              
+               if(name.length===0)
+               {
+                 s1.innerHTML="plz Enter ur Name ";
+                  //alert("plz Enter Name");
+                  flag="false";
+               }
+               else
+               {
+                s1.innerHTML="";
+               }
+               
+                 if(email.length===0)
+               {
+                 s2.innerHTML="plz Enter ur email ";
+              
+                  flag="false";
+               }
+               else
+               {
+                s2.innerHTML="";
+               }
+               
+                  if(password.length===0)
+               {
+                 s3.innerHTML="plz Enter ur pass ";
+              
+                  flag="false";
+               }
+                 else if(password.length<=4 || password.length>=9)
+                  {
+                      s3.innerHTML="*password must be 5-8 charcter";
+                      s3.style.color="red";
+                     flag=false;
+                } 
+               
+               else
+               {
+                s3.innerHTML="";
+               }
+               
+                if(cpassword.length===0)
+               {
+                 s4.innerHTML="Enter your password ";
+              
+                  flag="false";
+               }
+               else
+               {
+                s4.innerHTML="";
+               }
+               
+               if(mobile.length===0)
+               {
+                 s5.innerHTML="Enter your mobile no ";
+              
+                  flag="false";
+               }
+              
+                else if(isNaN(mobile))
+              {
+                     s5.innerHTML="*Contact number must be numeric";
+                     s5.style.color="red";
+                     flag=false;
+              }
+                 else if(mobile.length!=10)
+               {
+                    s5.innerHTML="*Contact number must be 10 digit";
+                   s5.style.color="red";
+                    flag=false;
+              } 
+               
+               else
+               {
+                s5.innerHTML="";
+               }
+               return flag;
+          }
+          function pwdchk()
+        {
+          var pwd=document.getElementById('password').value;   
+            var cpwd=document.getElementById('cpassword').value; 
+            if(pwd!==cpwd)
+            {
+                document.getElementById('s4').innerHTML="pswword doesn't match";
+            }
+            else
+            {
+                document.getElementById('s4').innerHTML="";   
+            }
+        }
+  </script>
+    
+    
+    </head>
+    <body>
+       
+         <center>
+             <form action="RegistrationTask" method="post" onsubmit="return f1()">
+    <table border="3" cellspacing="8" cellpadding="3" bgcolor="yellowgreen">
+    
+       <tr>
+         <td colspan="2" align="center">
+         <b>Registration Form</b>
+         </td>
+       </tr>
+      <tr>
+         <td>Name</td>
+         <td>
+         <input type="text" id="name" name="name" onkeyup="return f1()">
+        <span id="s1"></span>
+         </td>        
+      </tr>
+      
+       <tr>
+         <td>Father Name</td>
+         <td>
+         <input type="text" id="fname" name="fname" onkeyup="return f1()">
+        <span id="s1"></span>
+         </td>        
+      </tr>
+      
+      <tr>
+         <td>Email</td>
+         <td>
+         <input type="text" placeholder="Enter Email" name="email" id="email"
+         onkeyup="return f1()" >
+          <span id="s2"></span></td>
+      </tr>
+      
+      <tr>
+         <td>Password</td>
+         <td>
+         <input type="password" placeholder="Enter Pass" name="password"
+          id="password" onkeyup="return f1()">
+          <span id="s3"></span>
+          </td>
+      </tr>
+      <tr>
+         <td>Confirm Password</td>
+         <td>
+         <input type="password" placeholder="Enter conf Pass" name="cpassword"
+           id="cpassword" onkeyup="pwdchk()">
+             <span id="s4"></span>
+         </td>
+      </tr>
+      <tr>
+         <td>Contact</td>
+         <td><input type="text" placeholder="Enter Contact" name="mobile" id="mob" onkeyup="return f1()">
+         <span id="s5"></span>
+         </td>
+       
+      </tr>
+        <tr>
+          <td colspan="2" align="center">
+          <input type="submit" value="Save" onclick=" f1()">
+           <input type="reset" value="cancel">
+          </td>
+        </tr>
+    </table>
+    </form >
+    </center>
+        
+        
+    </body>
+</html>

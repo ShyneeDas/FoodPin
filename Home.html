@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Employee Portal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             *
+        {
+           margin:0.5%;
+           font-family: "Source Sans Pro", Arial;
+         }
+       #container
+       {
+          height:100%;
+          width:100%;
+          background-color:yellow;
+       }
+       #header
+       {          height:25%;
+                  width:auto;
+                  border: 10px dotted black;
+                  padding:35px;
+                  background: yellow;
+                  background-clip: content-box;
+                 background-color: antiquewhite;
+        }
+       #menu
+       {
+          height:10%;
+        
+          background-color:green;
+       }     
+       #majorcontainer
+       {
+         height:58%;
+         width: 100%;
+          background-color:white;
+       }
+       #left
+       {
+          height:100%;
+          width:100%;
+          background-color : grey;
+          float:left;
+       }
+        #right
+       {
+          height:25%;
+          width:100%;
+          background-color:grey;
+          float:right;
+          overflow: hidden;
+          z-index:1;
+       }
+       #rightup
+       {
+          height:25%;
+          width:100%;
+          background-color:orange;
+          float: left;
+       }
+        #majormid
+       {
+          height:650%;
+          width:100%;
+          background-image: url("foodbg.jpg");
+          float:left;
+       }
+        #footer
+       {
+         height:7%;
+          width:100%;
+          background-color:yellowgreen;
+       }
+       img{
+           padding:20px;
+       }
+       span
+       {
+         font-size:26px;
+         color:yellow;
+       }
+       #right img{
+           height:100px;
+       }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <center><h1> Food Recipinterest</h1></center> 
+                
+            </div>
+       <div id="menu">
+          <a href="Gallery.html">Gallery</a>
+          <a href="caloriecalc.html">Calorie Calculator</a>
+          <a href="aboutus.html">AboutUs</a>
+          <a href="contact.html">Contact</a>
+          <a href="help.html">Help</a>
+        
+       </div>
+       <div id="majorcontainer">
+           <div id="left">
+             <center>
+             <span>Latest Recepies</span>
+             </center>
+             <ul>
+               <li><a href="cornsoup.html">Chicken Corn soup</a></li>
+               <li><a href="Paneernan.html">Paneer with Nan</a></li>
+               <li><a href="Chickentakatak.html">Chicken takatak</a></li>
+               <li><a href="Chickentandoori.html">Chicken tandoori </a></li>
+             </ul>
+           </div>
+           <div id="majormid">
+             <center>
+             <span>Login to subscribe to more recipes</span>                          
+             <form action="LoginTask" method="post">
+             <table align ="right" border="3" bgcolor="yellowgreen">
+                <tr>
+                   <td>Email</td>
+                   <td>
+                   <input type="text">
+                   </td>
+                </tr>
+                <tr>
+                   <td>Password</td>
+                   <td>
+                   <input type="password">
+                   </td>
+                </tr>
+                <tr>
+                   <td align="center" colspan="2">
+                   <input type="submit" value="Login" >
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Registrationtoportal.html">New user! Sign up</a>
+                    </td>
+                </tr>
+             </table>
+             </form>
+             <video width="420" height="320" controls>
+                 <source src="Free Download Stock Video Food Cooking Kitchen Delicious.mp4" type="video/mp4">
+                     Your browser does not support the <code>video</code> tag.
+                </video>
+             </center>
+           </div>
+           <div id="right">
+             <div id="rightup">
+               <marquee>Mouth watering ,delicious and marvelous food. A meal that takes your heart away. A taste that stays in the mind for a while. Food is more than fuel to body, its love. It is heart and soul. It is everything!</marquee>
+             </div>
+            <marquee>
+            <img src="food.jpeg">
+            <img src="cooking.jpeg">
+            <img src="delic.jpeg">
+            <img src="melt.jpeg">
+            <img src="saute.jpeg">
+            <img src="garnish.jpeg">
+             </marquee>
+           </div> 
+       </div> 
+       <div id="footer">
+       <center>
+       <p>&copy;All right reserved</p>
+       </center>
+       </div>
+    </div>
+        
+        
+    </body>
+</html>
+         
